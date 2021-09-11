@@ -1,0 +1,205 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Evaristo Compagnucci, me, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\Facultad\4to\Segundo Cuatrimestre\Taller 1\prueba.uvprojx
+Project File Date:  09/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(26): warning: no newline at end of file [-Wnewline-eof]
+}*/
+   ^
+main.c(3): warning: unused variable 'cont_MEF' [-Wunused-variable]
+static volatile uint8_t cont_MEF = 0,Flag_MEF = 0;
+                        ^
+2 warnings generated.
+compiling main.c...
+lcd.c(6): warning: implicit declaration of function 'lcd_putValue' is invalid in C99 [-Wimplicit-function-declaration]
+lcd_putValue(cmd);
+^
+lcd.c(3): warning: no previous prototype for function 'lcd_sendCommand' [-Wmissing-prototypes]
+void lcd_sendCommand (uint8_t cmd)
+     ^
+lcd.c(3): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void lcd_sendCommand (uint8_t cmd)
+^
+static 
+lcd.c(15): warning: implicit declaration of function 'delay_us' is invalid in C99 [-Wimplicit-function-declaration]
+        delay_us(3000); /* wait 3ms */
+        ^
+lcd.c(11): warning: no previous prototype for function 'lcd_init' [-Wmissing-prototypes]
+void lcd_init()
+     ^
+lcd.c(11): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void lcd_init()
+^
+static 
+lcd.c(11): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void lcd_init()
+             ^
+5 warnings generated.
+compiling lcd.c...
+mef.c(1): warning: non-portable path to file '"mef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "MEF.h"
+         ^~~~~~~
+         "mef.h"
+mef.c(1): warning: In file included from...
+./MEF.h(4): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void MEF_Update();
+               ^
+                void
+./MEF.h(5): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void MEF_Init();
+             ^
+              void
+mef.c(16): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void actualizarTiempo();
+                     ^
+                      void
+mef.c(17): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void prepararHora();
+                 ^
+                  void
+mef.c(18): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void processAbierto();
+                   ^
+                    void
+mef.c(19): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void processCerrado();
+                   ^
+                    void
+mef.c(20): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void processDenegado();
+                    ^
+                     void
+mef.c(23): warning: no previous prototype for function 'MEF_Init' [-Wmissing-prototypes]
+void MEF_Init(){
+     ^
+./MEF.h(5): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void MEF_Init();
+     ^
+              void
+mef.c(23): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void MEF_Init(){
+             ^
+mef.c(45): warning: implicit declaration of function 'processIngresarContra' is invalid in C99 [-Wimplicit-function-declaration]
+                        processIngresarContra();
+                        ^
+mef.c(28): warning: no previous prototype for function 'MEF_Update' [-Wmissing-prototypes]
+void MEF_Update(){
+     ^
+./MEF.h(4): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void MEF_Update();
+     ^
+                void
+mef.c(28): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void MEF_Update(){
+               ^
+mef.c(58): warning: implicit declaration of function 'LCDGotoXY' is invalid in C99 [-Wimplicit-function-declaration]
+        LCDGotoXY(0,0);
+        ^
+mef.c(59): warning: implicit declaration of function 'LCDstring' is invalid in C99 [-Wimplicit-function-declaration]
+        LCDstring(stringTime,8);
+        ^
+mef.c(50): warning: no previous prototype for function 'prepararHora' [-Wmissing-prototypes]
+void prepararHora(){
+     ^
+mef.c(17): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void prepararHora();
+     ^
+                  void
+mef.c(50): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void prepararHora(){
+                 ^
+mef.c(61): warning: no previous prototype for function 'actualizarTiempo' [-Wmissing-prototypes]
+void actualizarTiempo(){
+     ^
+mef.c(16): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void actualizarTiempo();
+     ^
+                      void
+mef.c(61): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void actualizarTiempo(){
+                     ^
+mef.c(76): warning: no previous prototype for function 'processCerrado' [-Wmissing-prototypes]
+void processCerrado(){
+     ^
+mef.c(19): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void processCerrado();
+     ^
+                    void
+mef.c(76): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void processCerrado(){
+                   ^
+mef.c(10): warning: unused variable 'time_state' [-Wunused-variable]
+static uint8_t time_state= 0;
+               ^
+mef.c(13): warning: unused variable 'clave' [-Wunused-variable]
+static uint8_t clave[4] = {4,3,2,1};
+               ^
+23 warnings generated.
+compiling mef.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+linking...
+.\Objects\prueba.axf: Error: L6218E: Undefined symbol LCDGotoXY (referred from mef.o).
+.\Objects\prueba.axf: Error: L6218E: Undefined symbol LCDstring (referred from mef.o).
+.\Objects\prueba.axf: Error: L6218E: Undefined symbol delay_us (referred from lcd.o).
+.\Objects\prueba.axf: Error: L6218E: Undefined symbol lcd_putValue (referred from lcd.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+".\Objects\prueba.axf" - 4 Error(s), 31 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  C:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
